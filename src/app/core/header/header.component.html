@@ -9,7 +9,7 @@
         <li routerLinkActive="active"><a [routerLink]="['/shopping-list']">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <ng-template [ngIf]="!authService.isAuthenticated()">
+        <ng-template [ngIf]="!isAuthenticated()">
           <li routerLinkActive="active">
             <a [routerLink]="['/signup']">Sign Up</a>
           </li>
@@ -17,10 +17,10 @@
             <a [routerLink]="['/signin']">Sign In</a>
           </li>
         </ng-template>
-        <li *ngIf="authService.isAuthenticated()">
+        <li *ngIf="isAuthenticated()">
           <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
         </li>
-        <li class="dropdown" appDropdown *ngIf="authService.isAuthenticated()">
+        <li class="dropdown" appDropdown *ngIf="isAuthenticated()">
           <a style="cursor: pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
