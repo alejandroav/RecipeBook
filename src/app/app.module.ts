@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'recipe-book'}),
     HttpClientModule,
     SharedModule,
     ShoppingListModule,
