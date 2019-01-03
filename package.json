@@ -23,7 +23,7 @@
     "@angular/platform-server": "^7.1.4",
     "@angular/router": "~7.1.0",
     "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.0",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "firebase": "^5.7.1",
